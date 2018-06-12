@@ -1,0 +1,17 @@
+import math
+def norm1(vector):
+  x=0
+  for i in range(len(vector)):
+    x+=abs(vector[i])
+  return x
+
+
+def norm2(vector):
+  x=0
+  for i in range(len(vector)):
+    x+=vector[i]**2
+  return (math.sqrt(x))
+
+
+vector=[2,3]
+print(norm1(vector))
