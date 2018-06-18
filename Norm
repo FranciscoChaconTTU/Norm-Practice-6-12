@@ -12,6 +12,12 @@ def norm2(vector):
     x+=vector[i]**2
   return (math.sqrt(x))
 
+def inf(vector):
+  x=0
+  for i in range(len(vector)):
+    if abs(vector[i]) > x:
+      x= abs(vector[i]) 
+  return x
 
 vector=[2,3]
 print(norm1(vector))
